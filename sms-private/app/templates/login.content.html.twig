@@ -1,0 +1,31 @@
+<!-- Sign-Up Form  -->
+<section class="block section-padding">
+    <div class="container text-center">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="section-title center">
+                <h2 class="mb-small">Login | <strong>Below</strong></h2>
+                <p>Please enter your login details below.</p>
+            </div>
+            <form action="{{ action }}" method="{{ method }}" id="contactform" class="main-contact-form">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input class="form-control col-md-4" id="email" name="email" placeholder="Please Enter Your Email" type="text" value="{{ initial_input_box_value }}" size="30" maxlength="50" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input class="form-control col-md-4" id="password" name="password" placeholder="Please Enter Your Password" type="password" value="{{ initial_input_box_value }}" size="15" maxlength="15" required>
+                        </div>
+                    </div>
+                    <br />
+                    <p>Forgotten your details? <a href="{{ base_url() }}/#contact"> Click Here</a></p>
+                    <button type="submit" class="btn btn-primary" data-balloon="Right Click To Edit" data-balloon-pos="down">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Sign-Up Form  -->

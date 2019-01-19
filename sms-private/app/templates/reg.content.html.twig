@@ -1,0 +1,37 @@
+  <!-- Sign-Up Form  -->
+  <div class="section-wrapper block section-padding text-center container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="section-title center">
+          <h2 class="mb-small">Register | <strong>Below</strong></h2>
+          <p>Please register using the form below.</p>
+        </div>
+        <!-- end of instructions -->
+
+        <div id="message"></div>
+        <form action="{{ action }}" method="{{ method }}" id="contactform" class="main-contact-form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input class="form-control col-md-4" id="name" name="name" placeholder="Please Enter Your Name" type="text" value="{{ initial_input_box_value }}" size="15" maxlength="15" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input class="form-control col-md-4" id="password" name="password" placeholder="Please Enter Your Password" type="password" value="{{ initial_input_box_value }}" size="15" maxlength="15" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control col-md-4" id="emailAddress" name="email" placeholder="Please Enter Your Email" type="email" value="{{ initial_input_box_value }}" size="15" maxlength="30" required>
+          </div>
+          <p>Forgotten your details? <a href="{{ base_url() }}/#contact"> Click Here</a></p>
+          <button type="submit" class="btn btn-primary" data-balloon="Right Click To Edit" data-balloon-pos="down">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Sign-Up Form  -->
